@@ -1,6 +1,6 @@
 package dao;
 
-import model.Student;
+import model.Students;
 import utils.DatabaseConnector;
 
 import java.sql.*;
@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDAO {
-    public List<Student> getStudentsByMonth(int month) {
-        List<Student> students = new ArrayList<>();
+    public List<Students> getStudentsByMonth(int month) {
+        List<Students> students = new ArrayList<>();
         String query = "SELECT * FROM students WHERE strftime('%m', birth_date) = ?";
 
         try (Connection conn = DatabaseConnector.getConnection();
@@ -24,7 +24,7 @@ public class StudentDAO {
                 String birthDateString = rs.getString("birth_date");
                 LocalDate birthDate = LocalDate.parse(birthDateString, DateTimeFormatter.ISO_LOCAL_DATE);
 
-                students.add(new Student(
+                students.add(new Students(
                         rs.getInt("id"),
                         rs.getString("last_name"),
                         rs.getString("first_name"),

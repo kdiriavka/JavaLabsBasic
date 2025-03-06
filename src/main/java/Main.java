@@ -1,5 +1,5 @@
 import dao.StudentDAO;
-import model.Student;
+import model.Students;
 
 import java.util.List;
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class Main {
         System.out.print("Введіть номер місяця (1-12): ");
         int month = scanner.nextInt();
 
-        List<Student> students = studentDAO.getStudentsByMonth(month);
+        List<Students> students = studentDAO.getStudentsByMonth(month);
 
         if (students.isEmpty()) {
             System.out.println("Студентів, народжених у цьому місяці, немає.");
