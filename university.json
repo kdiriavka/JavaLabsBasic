@@ -1,0 +1,123 @@
+{
+  "name": "Національний Технічний Університет",
+  "head": {
+    "firstName": "Іван",
+    "lastName": "Петров",
+    "middleName": "Олександрович",
+    "gender": "MALE",
+    "type": "Human"
+  },
+  "faculties": [
+    {
+      "name": "Факультет Комп\u0027ютерних Наук",
+      "departments": [
+        {
+          "name": "Кафедра ІТ",
+          "groups": [
+            {
+              "name": "ІП-22",
+              "head": {
+                "firstName": "Олексій",
+                "lastName": "Іванов",
+                "middleName": "Сергійович",
+                "gender": "MALE",
+                "type": "Student"
+              },
+              "students": [
+                {
+                  "firstName": "Олексій",
+                  "lastName": "Іванов",
+                  "middleName": "Сергійович",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Марія",
+                  "lastName": "Петренко",
+                  "middleName": "Володимирівна",
+                  "gender": "FEMALE"
+                }
+              ]
+            },
+            {
+              "name": "ІП-23",
+              "head": {
+                "firstName": "Антон",
+                "lastName": "Гаврилюк",
+                "middleName": "Ігорович",
+                "gender": "MALE",
+                "type": "Student"
+              },
+              "students": [
+                {
+                  "firstName": "Антон",
+                  "lastName": "Гаврилюк",
+                  "middleName": "Ігорович",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Наталія",
+                  "lastName": "Семенюк",
+                  "middleName": "Андріївна",
+                  "gender": "FEMALE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Кафедра Програмування",
+          "groups": [
+            {
+              "name": "ІП-22",
+              "head": {
+                "firstName": "Олексій",
+                "lastName": "Іванов",
+                "middleName": "Сергійович",
+                "gender": "MALE",
+                "type": "Student"
+              },
+              "students": [
+                {
+                  "firstName": "Олексій",
+                  "lastName": "Іванов",
+                  "middleName": "Сергійович",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Марія",
+                  "lastName": "Петренко",
+                  "middleName": "Володимирівна",
+                  "gender": "FEMALE"
+                }
+              ]
+            },
+            {
+              "name": "ІП-23",
+              "head": {
+                "firstName": "Антон",
+                "lastName": "Гаврилюк",
+                "middleName": "Ігорович",
+                "gender": "MALE",
+                "type": "Student"
+              },
+              "students": [
+                {
+                  "firstName": "Антон",
+                  "lastName": "Гаврилюк",
+                  "middleName": "Ігорович",
+                  "gender": "MALE"
+                },
+                {
+                  "firstName": "Наталія",
+                  "lastName": "Семенюк",
+                  "middleName": "Андріївна",
+                  "gender": "FEMALE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

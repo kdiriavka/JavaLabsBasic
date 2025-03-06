@@ -1,5 +1,7 @@
 package model;
+import com.google.gson.annotations.JsonAdapter;
 
+@JsonAdapter(HumanAdapter.class)
 public abstract class Human {
     protected String firstName;
     protected String lastName;

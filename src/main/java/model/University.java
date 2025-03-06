@@ -1,10 +1,13 @@
 package model;
 
+import com.google.gson.annotations.JsonAdapter;
+
 import java.util.List;
 import java.util.Objects;
 
 public class University {
     private String name;
+    @JsonAdapter(HumanAdapter.class)
     private Human head;
     private List<Faculty> faculties;
 
