@@ -4,17 +4,17 @@ public abstract class Human {
     protected String firstName;
     protected String lastName;
     protected String middleName;
-    protected Sex sex;
+    protected Gender gender;
 
-    public Human(String firstName, String lastName, String middleName, Sex sex) {
+    public Human(String firstName, String lastName, String middleName, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
-        this.sex = sex;
+        this.gender = gender;
     }
 
     @Override
     public String toString() {
-        return firstName + " " + middleName + " " + lastName + " (" + sex + ")";
+        return firstName + " " + middleName + " " + lastName + " (" + gender + ")";
     }
 }
