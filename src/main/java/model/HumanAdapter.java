@@ -17,7 +17,7 @@ public class HumanAdapter implements JsonDeserializer<Human>, JsonSerializer<Hum
         switch (type) {
             case "Student":
                 return context.deserialize(json, Student.class);
-            case "Human":  // Додано для керівника університету!
+            case "Human":
                 return new Human(
                         jsonObject.get("firstName").getAsString(),
                         jsonObject.get("lastName").getAsString(),
@@ -40,7 +40,7 @@ public class HumanAdapter implements JsonDeserializer<Human>, JsonSerializer<Hum
         String type = (src instanceof Student) ? "Student" : "Human";
         jsonObject.addProperty("type", type);
 
-        System.out.println("Serializing Human: " + jsonObject); // Лог для перевірки
+        System.out.println("Serializing Human: " + jsonObject);
         return jsonObject;
     }
 
